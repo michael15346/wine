@@ -6308,7 +6308,7 @@ printf "%s\n" "$wine_cv_thumb2" >&6; }
           *)
             float_abi=softfp
             saved_CFLAGS=$CFLAGS
-            CFLAGS="$CFLAGS -mfloat-abi=$float_abi"
+            CFLAGS="$CFLAGS"
             { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking whether $CC supports -mfloat-abi=$float_abi" >&5
 printf %s "checking whether $CC supports -mfloat-abi=$float_abi... " >&6; }
 if test ${wine_cv_float_abi+y}
@@ -6346,8 +6346,8 @@ printf "%s\n" "$wine_cv_float_abi" >&6; }
         esac
         ;;
     esac
-    CFLAGS="$CFLAGS -mfloat-abi=$float_abi"
-    TARGETFLAGS="$TARGETFLAGS -mfloat-abi=$float_abi"
+    CFLAGS="$CFLAGS"
+    TARGETFLAGS="$TARGETFLAGS"
     ;;
   aarch64*)
     enable_wow64=${enable_wow64:-yes}
